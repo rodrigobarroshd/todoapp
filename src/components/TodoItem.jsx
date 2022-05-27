@@ -11,7 +11,7 @@ import CommentIcon from '@mui/icons-material/Comment';
 export default function TodoItem() {
   const [checked, setChecked] = React.useState([0]);
 
-  const handleToggle = (value: number) => () => {
+  const handleToggle = (value) => () => {
     const currentIndex = checked.indexOf(value);
     const newChecked = [...checked];
 
@@ -25,7 +25,7 @@ export default function TodoItem() {
   };
 
   return (
-    <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+    <List sx={{ width: '100%', bgcolor: 'background.paper' }}>
       {[0, 1, 2, 3].map((value) => {
         const labelId = `checkbox-list-label-${value}`;
 
