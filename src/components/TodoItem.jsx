@@ -8,11 +8,12 @@ import Checkbox from '@mui/material/Checkbox';
 import IconButton from '@mui/material/IconButton';
 import CommentIcon from '@mui/icons-material/Comment';
 import DeleteIcon from '@mui/icons-material/Delete';
-
+import { Paper } from '@mui/material';
 export default function TodoItem() {
   
 
   return (
+    <Paper>
     <ListItem
     secondaryAction={
       <IconButton edge="end" aria-label="comments">
@@ -34,6 +35,6 @@ export default function TodoItem() {
       <ListItemText primary={`Line item `}/>
     </ListItemButton>
   </ListItem>
-    
+  </Paper>
   );
 }
