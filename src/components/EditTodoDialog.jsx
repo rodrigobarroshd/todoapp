@@ -29,7 +29,7 @@ export default function EditTodoDialog({ open, dialogHandler, todo, editTodo }) 
       aria-describedby="alert-dialog-slide-description"
       fullWidth
     >
-      <DialogTitle>{"Editar Tarefa"}</DialogTitle>
+      <DialogTitle>{"Editar Tarefa "}</DialogTitle>
       <DialogContent>
         <TextField
           defaultValue={editedText}
